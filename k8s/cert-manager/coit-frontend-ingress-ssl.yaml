@@ -9,10 +9,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - basil.com.34.93.5.66.sslip.io
-    secretName:  basil.com.34.93.5.66.sslip.io
+    - basil.com.35.246.233.194.sslip.io
+    secretName:  basil.com.35.246.233.194.sslip.io
   rules:
-  - host: basil.com.34.93.5.66.sslip.io
+  - host: basil.com.35.246.233.194.sslip.io
     http:
       paths:
       - path: /

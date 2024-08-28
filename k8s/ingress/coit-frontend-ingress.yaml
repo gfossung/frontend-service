@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: basil.com.34-100-224-46.sslip.io
+  - host: basil.com.35.246.233.194.sslip.io
     http:
       paths:
       - path: /
