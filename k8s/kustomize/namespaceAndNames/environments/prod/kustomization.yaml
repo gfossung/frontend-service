@@ -1,0 +1,18 @@
+kind: Kustomization
+
+resources:
+- ../../resources
+
+images:
+- name: basilvarghese/myapp-frontend
+  newTag: 1.0.0
+
+namespace: prod
+
+replicas:
+- name: coit-frontend
+  count: 4
+
+namePrefix: customer1-
+nameSuffix: -prod
+
