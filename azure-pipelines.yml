@@ -23,4 +23,8 @@ steps:
 - script: |
     docker build -t gfossung/myapp-frontend:latest . -f Dockerfile
     npm run build
-  displayName: 'build container image'
+  displayName: 'build container image'  
+  
+- script: |
+    docker run gfossung/myapp-frontend:latest 
+  displayName: 'Run the application'  
