@@ -28,3 +28,7 @@ steps:
 - script: |
     docker run gfossung/myapp-frontend:latest 
   displayName: 'Run the application'  
+
+- script: |
+    docker ps  
+  displayName: 'Verify Container is Running'  
