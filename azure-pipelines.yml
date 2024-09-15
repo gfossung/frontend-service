@@ -30,7 +30,7 @@ steps:
   displayName: 'build container image'  
   
 - script: |
-    docker run gfossung/myapp-frontend:latest 
+    docker run -d gfossung/myapp-frontend:latest 
   displayName: 'Run the application'  
 
 - script: |
