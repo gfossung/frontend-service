@@ -52,5 +52,15 @@ steps:
     command: 'apply'
     arguments: -f . 'k8s/simple'
 
+- script: |
+    sleep 60
+  displayName: 'wait for LoadBalancer to come up'
 
+- task: Kubernetes@1
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'gke-development'
+    namespace: default
+    command: 'get'
+    arguments: service coit-frontend-lb
   
