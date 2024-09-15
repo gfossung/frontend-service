@@ -47,7 +47,7 @@ steps:
 - task: Kubernetes@1
   inputs:
     connectionType: 'Kubernetes Service Connection'
-    kubernetesServiceEndpoint: 'gke-dev'
+    kubernetesServiceEndpoint: 'gke-development'
     namespace: default
     command: 'apply'
     arguments: -f . 'k8s/simple'
