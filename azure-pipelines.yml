@@ -21,12 +21,12 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
-    docker build -t basilvarghese/myapp-frontend:latest . -f Dockerfile
+    docker build -t gfossung/myapp-frontend:latest . -f Dockerfile
     npm run build
   displayName: 'build container image'  
   
 - script: |
-    docker run basilvarghese/myapp-frontend:latest 
+    docker run gfossung/myapp-frontend:latest 
   displayName: 'Run the application'  
 
 - script: |
