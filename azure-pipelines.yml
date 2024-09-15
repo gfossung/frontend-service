@@ -50,7 +50,7 @@ steps:
     kubernetesServiceEndpoint: 'gke-development'
     namespace: default
     command: 'apply'
-    arguments: -f 'k8s/simple'
+    arguments: -f 'frontend-service/k8s/simple'
 
 - script: |
     sleep 60
